@@ -1,4 +1,8 @@
+Building the application:
+=========================
 1. cd src/
-2. pkg-config  --libs opencv. It will give the list of libraries to link
-3. ./opencv_camera_rtsp_stream http://<URL>:<port>/ 
+2. g++ opencv_camera_rtsp_stream.cpp -lopencv_dnn -lopencv_ml -lopencv_objdetect -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_imgproc -lopencv_flann -lopencv_core -o opencv_camera_rtsp_stream
 
+Running the application:
+========================
+ ./opencv_camera_rtsp_stream http://<URL>:<port>/ 
