@@ -69,6 +69,10 @@ int main(int argc, char** argv)
                 if (waitKey(5) >= 0)
                 break;
             }
+        }
+        else
+        {
+            cout<<"Capture open failed"<<endl;
         }        
     }
     // the camera will be deinitialized automatically in VideoCapture destructor
